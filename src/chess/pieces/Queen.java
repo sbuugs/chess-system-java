@@ -17,7 +17,7 @@ boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 		
 		Position p = new Position(0, 0);
 		
-		//Above
+		// Above
 		p.setValues(position.getRow() - 1, position.getColumn());
 		while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
@@ -27,7 +27,7 @@ boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		//Left
+		// Left
 		p.setValues(position.getRow(), position.getColumn() - 1);
 		while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
@@ -37,7 +37,7 @@ boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		//Right
+		// Right
 		p.setValues(position.getRow(), position.getColumn() + 1);
 		while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
@@ -47,7 +47,7 @@ boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		//Below
+		// Below
 		p.setValues(position.getRow() + 1, position.getColumn());
 		while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
@@ -57,7 +57,7 @@ boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		//NW
+		// NW
 		p.setValues(position.getRow() - 1, position.getColumn() - 1);
 		while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
@@ -67,7 +67,7 @@ boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		//NE
+		// NE
 		p.setValues(position.getRow() - 1, position.getColumn() + 1);
 		while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
@@ -77,7 +77,7 @@ boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		//SE
+		// SE
 		p.setValues(position.getRow() + 1, position.getColumn() + 1);
 		while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
@@ -87,7 +87,7 @@ boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		//SW
+		// SW
 		p.setValues(position.getRow() + 1, position.getColumn() - 1);
 		while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
